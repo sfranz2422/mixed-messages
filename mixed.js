@@ -26,22 +26,22 @@ const readline = require("readline").createInterface({
   output: process.stdout,
 });
 
-readline.question(`What's your name?`, (name) => {
-  console.log(`Hello ${name}`);
-  console.log("Clear your mind and ask me a yes or no question....");
+readline.question(`What's your name? \n`, (name) => {
+  console.log(`Hello ${name} \n`);
+  console.log("Clear your mind and ask me a yes or no question.... \n \n");
   setTimeout(function () {
-    console.log("Let me think....");
+    console.log("Let me think.... \n");
   }, 2000);
   setTimeout(function () {
-    console.log("....");
+    console.log("............ \n");
   }, 2000);
   setTimeout(function () {
-    console.log("....");
+    console.log("............ \n");
   }, 3000);
   setTimeout(function () {
     let randomIndex = Math.floor(Math.random() * phrases.length);
     let response = phrases[randomIndex];
-    console.log(response);
+    console.log(response + "\n \n \n \n");
   }, 4000);
   readline.close();
 });
