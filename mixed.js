@@ -27,16 +27,16 @@ const readline = require("readline").createInterface({
 });
 
 readline.question(`What's your name? \n`, (name) => {
-  console.log(`Hello ${name} \n`);
+  console.log(`Hello ${name} \n \n`);
   console.log("Clear your mind and ask me a yes or no question.... \n \n");
   setTimeout(function () {
-    console.log("Let me think.... \n");
+    console.log("Let me think.......... \n");
   }, 2000);
   setTimeout(function () {
-    console.log("............ \n");
+    console.log("................. \n");
   }, 2000);
   setTimeout(function () {
-    console.log("............ \n");
+    console.log("................. \n");
   }, 3000);
   setTimeout(function () {
     let randomIndex = Math.floor(Math.random() * phrases.length);
